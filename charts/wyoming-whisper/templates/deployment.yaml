@@ -35,15 +35,18 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          args:
+            - "--model tiny-int8"
+            - "--language en"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
+            - name: wyoming-whisper
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          livenessProbe:
-            {{- toYaml .Values.livenessProbe | nindent 12 }}
-          readinessProbe:
-            {{- toYaml .Values.readinessProbe | nindent 12 }}
+          # livenessProbe:
+          #   {{- toYaml .Values.livenessProbe | nindent 12 }}
+          # readinessProbe:
+          #   {{- toYaml .Values.readinessProbe | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- with .Values.volumeMounts }}

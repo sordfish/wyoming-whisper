@@ -8,8 +8,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: wyoming-whisper
       protocol: TCP
-      name: http
+      name: wyoming-whisper
   selector:
     {{- include "wyoming-whisper.selectorLabels" . | nindent 4 }}
