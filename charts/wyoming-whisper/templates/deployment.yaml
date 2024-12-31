@@ -40,7 +40,7 @@ spec:
             - "--language en"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: wyoming-whisper
+            - name: whisper
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           # livenessProbe:
