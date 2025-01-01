@@ -3,6 +3,16 @@ entries:
   wyoming-whisper:
   - apiVersion: v2
     appVersion: 2.4.0
+    created: "2025-01-01T15:33:00.400884128Z"
+    description: A Helm chart for Kubernetes
+    digest: 19acb27f8102622236a4515d87ca20960df2aa2cd45e5e2bcd51e9d4ec92ac68
+    name: wyoming-whisper
+    type: application
+    urls:
+    - https://github.com/sordfish/wyoming-whisper-helm-chart/releases/download/wyoming-whisper-0.1.3/wyoming-whisper-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 2.4.0
     created: "2024-12-31T15:51:33.853880801Z"
     description: A Helm chart for Kubernetes
     digest: 1746bc48862f7618fe204c7c60985c64cc5e083c6580c003580811906e9d98a3
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/sordfish/wyoming-whisper-helm-chart/releases/download/wyoming-whisper-0.1.1/wyoming-whisper-0.1.1.tgz
     version: 0.1.1
-generated: "2024-12-31T15:51:33.853922619Z"
+generated: "2025-01-01T15:33:00.400896321Z"
